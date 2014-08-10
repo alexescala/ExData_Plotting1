@@ -1,6 +1,7 @@
 ## download and unzip file
 if(!file.exists("data")) dir.create("data")
 pathUrl="https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
+## the following works with git 3.1.1, RStudio 0.98, Windows 8.1
 download.file(pathUrl,"./data/power.zip",mode="wb")
 unzip("./data/power.zip",exdir="./data")
 
